@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <script type="text/javascript" src = "Formulario.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="return Cadastro()" id='formulario' name="formulario" method="post">
+        <p>Formulário Do Funcionario</p>
+        <div class="campo">
+            <label for ="ide">Seu Id:</label>
+            <input type="text" id="id" name="id" placeholder="digite seu id*">
+        </div>
+        <div class="campo">
+            <label for ="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="digite seu Nome aqui*">
+        </div>
+        <div class="campo">
+            <label for ="tel">Telefone Para Contato:</label>
+            <input type="text" id="tel" name="tel" placeholder="digite o seu numero*">
+        </div>
+        <div class="campo">
+            <label for ="cep">Digite o CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="digite o seu cep*">
+        </div><br>
+        <input type="button" name="botao" value="Verificar" onclick="findCEP()">
+        <div class="campo">
+            <label for ="log">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" size="70">
+        </div>
+        <div class="campo">
+            <label for ="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+        </div>
+        <div class="campo">
+            <label for ="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+        </div>
+        <div class="campo">
+            <label for ="uf">Uf:</label>
+            <input type="text" id="uf" name="uf">
+        </div>
+        <div class="campo">
+            <label for ="salario">Salario:</label>
+            <input type="text" id="salario" name="salario" placeholder="digite o seu salario*">
+        </div>
+        
+        <div class="campo">
+            <label for ="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" placeholder="Digite sua idade">
+        </div>
+        
+        <div class="campo">
+            <span>Qual Seu Estado Civil:</span>
+            <input type="radio" id="estado" name="estado_civil" value="solteiro" ><label for="solteiro">Solteiro(a)</label>
+            <input type="radio" id="estado" name="estado_civil" value="casado" checked><label for="casado">Casado(a)</label>
+        </div>
+        <br>
+        <div class="botao">
+            <input type="button" id="enviar" value="Enviar" onclick="Cadastro()">
+            <input type="button" id="imprimir" value="Imprimir" onclick="window.print()">
+            </form>
+    </form>
+    
+</body>
+</html>

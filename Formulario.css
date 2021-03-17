@@ -1,0 +1,43 @@
+#formulario{
+    width: auto;
+    padding: 100px;
+    border:1px solid #ccc;
+}
+#formulario p{
+    width: 100%;
+    font-size: 1.5em;
+} 
+.campo span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    width: 100%;
+}
+.radio label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+textarea{/*FAZ A FORMATACAO DOS BLOCOS DE TEXTO*/
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input[type=button]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.botao input{
+    display: inline-block;
+}
